@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type SettingStore = {
+type SettingsStore = {
     isOpen: boolean;
     onOpen: () => void;
     onClose: () => void;
