@@ -60,6 +60,7 @@ export const SearchCommand = () => {
                             value={`${document._id}-${document.title}}`}
                             title={document.title}
                             onSelect={onSelect}
+                            className="cursor-pointer"
                         >
                             {document.icon ? (
                                 <p className="mr-2 text-[18px]">
