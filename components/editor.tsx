@@ -31,6 +31,7 @@ const Editor = ({
     const { edgestore } = useEdgeStore();
 
     const handleUpload = async (file: File) => {
+        if (!editable) return "";
         const response = await edgestore.publicFiles.upload({
             file
         });
