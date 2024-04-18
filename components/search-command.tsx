@@ -59,7 +59,7 @@ export const SearchCommand = () => {
                             key={document._id}
                             value={`${document._id}-${document.title}}`}
                             title={document.title}
-                            onSelect={onSelect}
+                            onSelect={() => onSelect(document._id)}
                             className="cursor-pointer"
                         >
                             {document.icon ? (
